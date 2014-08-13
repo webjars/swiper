@@ -65,67 +65,12 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>https://raw.githubusercontent.com/nolimits4web/Swiper/v2.6.1/dist/idangerous.swiper.css</fromFile>
-                            <toFile>${project.build.directory}/idangerous.swiper.css</toFile>
+                            <fromFile>archive/v${upstream.version}.zip</fromFile>
+                            <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
-
-        <!-- FIXME what is the difference between a "plugin" and an "extension"? -->
-        <extensions>
-            <!--
-                http://maven.apache.org/wagon/wagon-providers/wagon-scm/index.html
-
-                "Get files from several SCM using Maven SCM (only tested with CVS and SVN)"
-
-                well that's just great
-            -->
-
-            <!-- 
-                http://maven.apache.org/wagon/wagon-providers/wagon-scm/usage.html
-
-                "You need to add some extensions to your pom:
-
-                wagon-scm,
-                maven-scm-manager-plexus
-                and the Maven SCM Provider for your SCM system,"
-            -->
-
-            <!--
-                http://maven.apache.org/wagon/wagon-providers/wagon-scm/
-                "This component is an implementation of Wagon provider for SCM (Source Control Management) systems"
-                FIXME what does this mean
-            -->
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-scm</artifactId>
-                <version>2.6</version> <!-- ??? -->
-            </extension>
-
-            <!--
-                http://maven.apache.org/scm/maven-scm-managers/maven-scm-manager-plexus/
-                "SCM Plexus component."
-                Yep, that's all the documentation.
-                Yep, the documentation is shorter than the name.
-            -->
-            <extension>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-manager-plexus</artifactId>
-                <version>1.9.1</version> <!-- ??? -->
-            </extension>
-
-            <!--
-                http://maven.apache.org/scm/maven-scm-providers/maven-scm-providers-git/maven-scm-provider-gitexe/
-                "Executable implementation for SCM Git Provider."
-                So I also have to include an "SCM Git Provider"???
-            -->
-            <extension>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-provider-gitexe</artifactId>
-                <version>1.9</version>
-            </extension>
-        </extensions>
     </build>
 </project>
