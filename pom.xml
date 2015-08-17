@@ -25,6 +25,11 @@
 
     <developers>
         <developer>
+            <id>jameshfisher</id>
+            <name>James Harrison Fisher</name>
+            <email>jameshfisher@gmail.com</email>
+        </developer>
+        <developer>
             <id>chrsmtclf</id>
             <name>Chris Metcalfe</name>
             <email>chrsmtclf@gmail.com</email>
