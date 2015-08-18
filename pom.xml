@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>swiper</artifactId>
-    <version>3.1.0-SNAPSHOT</version>
+    <version>3.1.0</version>
     <name>swiper</name>
     <description>WebJar for swiper</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/swiper</url>
         <connection>scm:git:https://github.com/webjars/swiper.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/swiper.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>swiper-3.1.0</tag>
     </scm>
 
     <build>
@@ -67,10 +67,10 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <property name="localZipPath" value="${project.build.directory}/${project.artifactId}.zip"/>
-                                <get src="${upstream.url}/archive/v${upstream.version}.zip" dest="${localZipPath}"/>
-                                <unzip src="${localZipPath}" dest="${project.build.directory}"/>
-                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/Swiper-${upstream.version}/dist"/></copy>
+                                <property name="localZipPath" value="${project.build.directory}/${project.artifactId}.zip" />
+                                <get src="${upstream.url}/archive/v${upstream.version}.zip" dest="${localZipPath}" />
+                                <unzip src="${localZipPath}" dest="${project.build.directory}" />
+                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/Swiper-${upstream.version}/dist" /></copy>
                             </target>
                         </configuration>
                     </execution>
