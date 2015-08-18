@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>swiper</artifactId>
-    <version>3.1.0</version>
+    <version>3.1.1-SNAPSHOT</version>
     <name>swiper</name>
     <description>WebJar for swiper</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/swiper</url>
         <connection>scm:git:https://github.com/webjars/swiper.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/swiper.git</developerConnection>
-        <tag>swiper-3.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
