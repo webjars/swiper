@@ -67,10 +67,10 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <property name="localZipPath" value="${project.build.directory}/${project.artifactId}.zip" />
-                                <get src="${upstream.url}/archive/v${upstream.version}.zip" dest="${localZipPath}" />
-                                <unzip src="${localZipPath}" dest="${project.build.directory}" />
-                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/Swiper-${upstream.version}/dist" /></copy>
+                                <property name="localZipPath" value="${project.build.directory}/${project.artifactId}.zip"/>
+                                <get src="${upstream.url}/archive/v${upstream.version}.zip" dest="${localZipPath}"/>
+                                <unzip src="${localZipPath}" dest="${project.build.directory}"/>
+                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/Swiper-${upstream.version}/dist"/></copy>
                             </target>
                         </configuration>
                     </execution>
@@ -79,12 +79,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
