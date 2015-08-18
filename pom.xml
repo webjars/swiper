@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>swiper</artifactId>
-    <version>2.6.2-SNAPSHOT</version>
+    <version>3.1.0-SNAPSHOT</version>
     <name>swiper</name>
     <description>WebJar for swiper</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>2.6.1</upstream.version>
+        <upstream.version>3.1.0</upstream.version>
         <upstream.url>https://github.com/nolimits4web/Swiper</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
@@ -28,6 +28,11 @@
             <id>jameshfisher</id>
             <name>James Harrison Fisher</name>
             <email>jameshfisher@gmail.com</email>
+        </developer>
+        <developer>
+            <id>chrsmtclf</id>
+            <name>Chris Metcalfe</name>
+            <email>chrsmtclf@gmail.com</email>
         </developer>
     </developers>
 
