@@ -75,7 +75,7 @@
                                 <property name="localZipPath" value="${project.build.directory}/${project.artifactId}.zip" />
                                 <get src="${upstream.url}/archive/v${upstream.version}.zip" dest="${localZipPath}" />
                                 <unzip src="${localZipPath}" dest="${project.build.directory}" />
-                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/Swiper-${upstream.version}/dist" /></copy>
+                                <copy todir="${destDir}"><fileset dir="${project.build.directory}/swiper-${upstream.version}/dist" /></copy>
                             </target>
                         </configuration>
                     </execution>
